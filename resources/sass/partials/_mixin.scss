@@ -1,0 +1,43 @@
+// *
+// Flex-center-between
+// *
+@mixin flex--SB-C{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// *
+// Flex-center-between
+// *
+@mixin flex--SA-C{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// *
+// Background image
+// *
+@mixin bgImg($pathImg) {
+    background-image: url($pathImg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// *
+// Object fit
+// *
+@mixin objFit--C-T {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+// *
+// InlineList
+// *
+@mixin inlineList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
+
+700&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+a {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
