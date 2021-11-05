@@ -15,6 +15,14 @@
     align-items: center;
 }
 // *
+// Flex-center-between
+// *
+@mixin grid--C-C {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+// *
 // Background image
 // *
 @mixin bgImg($pathImg) {

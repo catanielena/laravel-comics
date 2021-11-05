@@ -12,7 +12,103 @@ a {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+h3 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 0.9375rem;
+}
+
 ul {
   list-style: none;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  color: #fff;
+  padding: 0 1.25rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn--fill {
+  background-color: #0282f9;
+}
+
+.btn--padding--lg {
+  padding: 0.625rem 3.125rem;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
+main .comics__title {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transform: translateY(-50%);
+  background-color: #0282f9;
+}
+
+main .comics__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+main .comics__list li {
+  width: 100%;
+}
+
+main .item__img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+main .item__img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .item__img::after {
+  content: "";
+  display: inline-block;
+  padding-bottom: 100%;
+}
+
+main .item__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 1.25rem 0 3.125rem;
+}
+
+main .main__btn {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1.25rem 0;
 }
 

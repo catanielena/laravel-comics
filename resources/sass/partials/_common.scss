@@ -5,9 +5,51 @@
 body, button, a {
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
+h3 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: .9375rem;
+}
 // *
 // List
 // *
 ul {
     list-style: none;
+}
+// *
+// Container
+// *
+.container {
+    max-width: 80rem;
+    margin: auto;
+    color: #fff;
+    padding: 0 $smGapX2;
+}
+// *
+// Buttons
+// *
+.btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn--fill {
+    background-color: $mainColor;
+}
+
+.btn--padding--lg {
+    padding: $smGap $lgGap;
 }
