@@ -17,8 +17,15 @@ $sectionPadding: 2rem 0;
 // *
 // Gap
 // *
+$xsGap: 0.3rem;
 $smGap: 0.625rem;
 $smGapX2: $smGap * 2;
 $mdGap: .8rem;
 $mdGapX2: $mdGap * 2;
 $lgGap: 3.125rem;
+// *
+// Font
+// *
+$txt--sm: .625rem; 
+$txt: .8rem;
+

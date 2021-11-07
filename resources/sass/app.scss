@@ -1,8 +1,13 @@
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import 'partials/reset';
 @import 'partials/variables';
 @import 'partials/common';
 @import 'partials/mixin';
 @import 'partials/header';
+@import 'partials/hero';
 @import 'partials/main';
 @import 'partials/footer';
 

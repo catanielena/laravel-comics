@@ -15,11 +15,27 @@
     align-items: center;
 }
 // *
-// Flex-center-between
+// Flex-end-between
+// *
+@mixin flex--E-C{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+// *
+// Grid-center-center
 // *
 @mixin grid--C-C {
     display: grid;
     justify-items: center;
+    align-items: center;
+}
+// *
+// Grid-center-center
+// *
+@mixin grid--E-C {
+    display: grid;
+    justify-items: flex-end;
     align-items: center;
 }
 // *

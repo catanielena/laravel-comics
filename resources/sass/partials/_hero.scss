@@ -1,0 +1,6 @@
+.hero {
+    height: 25rem;
+    img {
+        @include objFit--C-T;
+    }
+}

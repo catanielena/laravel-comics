@@ -1,0 +1,70 @@
+header {
+    .header__top {
+        font-size: $txt--sm;
+        background-color: $mainColor;
+        color: #fff;
+
+        .container {
+            @include flex--E-C;
+
+            &>* {
+                margin-left: $smGapX2;
+                padding: $xsGap 0;
+            }
+        }
+
+    }
+
+    .header {
+        .container {
+            @include flex--SB-C;
+        }
+
+        .header__logo {
+            height: 4rem;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .nav__list {
+            font-size: $txt;
+            font-weight: 700;
+            color: $grey100;
+            @include inlineList;
+
+            a {
+                position: relative;
+                @include flex--SB-C;
+                padding: 2.5rem 0;
+                margin: 0 1rem;
+
+                &.active, &:hover {
+                    color: $mainColor;
+                }
+
+                &.active::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    display: inline-block;
+                    height: .25rem;
+                    width: 100%;
+                    background-color: $mainColor;
+                }
+            }
+        }
+
+        .form {
+            .btn {
+                position: relative;
+            }
+
+            button i { 
+                color: black;
+            }
+        }
+    }
+}
