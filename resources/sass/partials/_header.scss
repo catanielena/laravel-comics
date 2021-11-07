@@ -17,7 +17,10 @@ header {
 
     .header {
         .container {
-            @include flex--SB-C;
+            // @include flex--SB-C;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
         }
 
         .header__logo {
@@ -36,7 +39,7 @@ header {
 
             a {
                 position: relative;
-                @include flex--SB-C;
+                display: flex;
                 padding: 2.5rem 0;
                 margin: 0 1rem;
 
@@ -58,12 +61,90 @@ header {
         }
 
         .form {
+            justify-self: end;
             .btn {
                 position: relative;
             }
 
             button i { 
                 color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        .header {
+            padding-top: $mdGap;
+            .container {
+                grid-template-rows: repeat(2, 1fr);                
+            }
+
+            .header__nav {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 2;
+            }
+            .nav__list {
+                justify-items: space-between;
+            }
+            .form {
+                grid-column-start: 3;
+                grid-row-start: 1;               
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        .header {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr auto;                
+            }
+
+            .header__nav {
+                grid-column-start: 1;
+                grid-column-end: 4;
+
+                grid-row-start: 2;
+            }
+            .nav__list {
+                // flex-direction: column;
+                flex-wrap: wrap;
+                
+                li {
+                    width: calc(100% / 5);
+                }
+
+                a {
+                    padding: 1rem 0;
+                }
+                
+                a:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+            
+
+            .form {
+                grid-column-start: 3;
+                grid-row-start: 1;               
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    header {
+        .header {
+            .nav__list {
+                
+                li {
+                    width: calc(100% / 3);
+                } 
             }
         }
     }

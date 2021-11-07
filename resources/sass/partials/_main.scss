@@ -54,8 +54,15 @@ main {
         padding: $lgGap;
         background-color: $mainColor;
 
-        .shop__list, .list__item a{
-            @include flex--SB-C;
+        .shop__list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        }
+
+        .list__item a {
+            display: flex;
+            align-items: center;
+            margin: $smGap 0;
         }
 
         .item__img {
@@ -69,3 +76,10 @@ main {
     }
 }
 
+@media screen and (max-width:1024px) {
+    main {
+        .shop {
+            font-size: $txt;
+        }
+    }
+}

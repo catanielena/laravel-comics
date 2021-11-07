@@ -24,7 +24,7 @@
                     <li class="list__item"><a href="#" class="btn">shop <span class="color--main">&#9662;</span></a></li>
                 </ul>
             </nav>
-            <form action="">
+            <form action="" class="form">
                 <input style="font-family: 'PT Sans Narrow','Font Awesome 5 Free';" type="text" placeholder="Search &#xf002;">
             </form>
         </div>
