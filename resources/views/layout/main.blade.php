@@ -13,5 +13,6 @@
         <main>
             @yield("mainContent")
         </main>
+        @include("partials/footer")
     </body>
 </html>

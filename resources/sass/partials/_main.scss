@@ -1,51 +1,71 @@
 main {
-    // padding: $sectionPadding;
-    background-color: $grey100;
-
-    .comics__title {
-        position: relative;
-        display: inline-block;
-        padding: .8rem 2rem;
-        transform: translateY(-50%);
-        background-color: $mainColor;
-    }
-
-    .comics__list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-        column-gap: $smGapX2;
-
-        li {
-            width: 100%;
-        }
-    }
-
-    .item__img {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-
-        img {
-            position: absolute;
-            @include objFit--C-T;
-        }
-
-        &::after {
-            content: "";
+    .comics {
+        background-color: $grey100;
+    
+        .comics__title {
+            position: relative;
             display: inline-block;
-            padding-bottom: 100%;
+            padding: .8rem 2rem;
+            transform: translateY(-50%);
+            background-color: $mainColor;
+        }
+    
+        .comics__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+            column-gap: $smGapX2;
+    
+            li {
+                width: 100%;
+            }
+        }
+    
+        .item__img {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+    
+            img {
+                position: absolute;
+                @include objFit--C-T;
+            }
+    
+            &::after {
+                content: "";
+                display: inline-block;
+                padding-bottom: 100%;
+            }
+        }
+    
+        .item__title {
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: $smGapX2 0 $lgGap;        
+        } 
+    
+        .main__btn {
+            @include grid--C-C;
+            padding: $smGapX2 0;
         }
     }
-
-    .item__title {
+    
+    .shop {
         text-transform: uppercase;
-        font-weight: 400;
-        margin: $smGapX2 0 $lgGap;        
-    } 
+        padding: $lgGap;
+        background-color: $mainColor;
 
-    .main__btn {
-        @include grid--C-C;
-        padding: $smGapX2 0;
+        .shop__list, .list__item a{
+            @include flex--SB-C;
+        }
+
+        .item__img {
+            margin-right: $mdGap;
+        }
+        
+        .item__img img{
+            max-width: 3rem;
+            height: 3rem;
+        }
     }
 }
 
