@@ -59,27 +59,27 @@
                 <h4 class="color--main">FOLLOW US</h4>
                 <ul class="social__list">
                     <li class="list__item">
-                        <a href="#">
+                        <a href="#" class="btn">
                             <img src="{{asset("images/footer-facebook.png")}}" alt="facebook">
                         </a>
                     </li>
                     <li class="list__item">
-                        <a href="#">
+                        <a href="#" class="btn">
                             <img src="{{asset("images/footer-twitter.png")}}" alt="twitter">
                         </a>
                     </li>
                     <li class="list__item">
-                        <a href="#">
+                        <a href="#" class="btn">
                             <img src="{{asset("images/footer-youtube.png")}}" alt="youtube">
                         </a>
                     </li>
                     <li class="list__item">
-                        <a href="#">
+                        <a href="#" class="btn">
                             <img src="{{asset("images/footer-pinterest.png")}}" alt="pinterest">
                         </a>
                     </li>
                     <li class="list__item">
-                        <a href="#">
+                        <a href="#" class="btn">
                             <img src="{{asset("images/footer-periscope.png")}}" alt="periscope">
                         </a>
                     </li>
